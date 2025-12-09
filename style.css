@@ -1,6 +1,15 @@
 :root {
   --DATE-CLR: rgb(167, 167, 167);
 }
+body {
+  padding: 1rem 0.5rem;
+}
+
+p,
+h1,
+button {
+  font-family: sans-serif;
+}
 
 .header-wrapper {
   text-align: center;
@@ -9,7 +18,6 @@
 
 .logs {
   padding-block: 2rem;
-  background-color: aquamarine;
 }
 
 .log {
@@ -27,13 +35,7 @@
   align-items: end;
   gap: 1.5rem;
 
-  background-color: aliceblue;
-
-  padding-top: 1.6rem;
-}
-
-.visual-path {
-  background-color: aliceblue;
+  padding-top: 1.2rem;
 }
 
 .vertical {
@@ -65,7 +67,7 @@
   align-items: flex-start;
 
   gap: 1.5rem;
-  padding-top: 1.6rem;
+  padding-top: 1.2rem;
 }
 
 .date,
@@ -73,7 +75,11 @@
   color: var(--DATE-CLR);
 }
 
-.complete-log-btn {
+.mobile {
+  display: none;
+}
+
+.btn {
   background-color: black;
   color: rgb(237, 237, 237);
 
@@ -82,6 +88,49 @@
   padding: 0.5rem 1rem;
 
   font-size: 0.8rem;
-
   border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgb(55, 55, 55);
+}
+
+@media screen and (max-width: 32.5rem) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 28.75rem) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .desc {
+    font-size: 0.9rem;
+  }
+  .log {
+    gap: 0.8rem;
+  }
+
+  .change,
+  .mobile {
+    font-size: 0.9rem;
+  }
+
+  .changes,
+  .dates {
+    gap: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .changes {
+    gap: 0.8rem;
+  }
 }
