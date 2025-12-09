@@ -1,4 +1,87 @@
+:root {
+  --DATE-CLR: rgb(167, 167, 167);
+}
+
 .header-wrapper {
   text-align: center;
   padding-top: 2rem;
+}
+
+.logs {
+  padding-block: 2rem;
+  background-color: aquamarine;
+}
+
+.log {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: start;
+
+  min-height: 3.5rem;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1.5rem;
+
+  background-color: aliceblue;
+
+  padding-top: 1.6rem;
+}
+
+.visual-path {
+  background-color: aliceblue;
+}
+
+.vertical {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  height: calc(2.6rem + 5.5px);
+  width: 0.095rem;
+
+  overflow: visible;
+  background-color: black;
+}
+
+.circle {
+  flex-shrink: 0;
+  height: 0.9rem;
+  width: 0.9rem;
+
+  border-radius: 50%;
+  background-color: black;
+
+  margin-bottom: 5.5px;
+}
+
+.changes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 1.5rem;
+  padding-top: 1.6rem;
+}
+
+.date,
+.desc {
+  color: var(--DATE-CLR);
+}
+
+.complete-log-btn {
+  background-color: black;
+  color: rgb(237, 237, 237);
+
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  font-size: 0.8rem;
+
+  border-radius: 0.5rem;
 }
